@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate | Project Arbroath</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="/" class="logo">PROJECT ARBROATH</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/sovereignty.html">Sovereignty</a></li>
+        <li class="nav-item"><a href="/booklet/">The Booklet ▾</a><div class="dropdown"><a href="/booklet/">About the Booklet</a><a href="/booklet/order.html">Get the Booklet</a></div></li>
+        <li class="nav-item">
+          <a href="/holyrood/">Holyrood 2026 ▾</a>
+          <div class="dropdown">
+            <a href="/holyrood/">Overview</a>
+            <a href="/holyrood/second-vote.html">The Second Vote</a>
+            <a href="/holyrood/explainers.html">Explainers</a>
+            <a href="/holyrood/calculator.html">Electoral Calculator</a>
+          </div>
+        </li>
+        <li><a href="/donate.html" class="cta-nav">Donate</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <h1>Support Project Arbroath</h1>
+      <p>Help us print and distribute booklets across Scotland</p>
+    </div>
+
+    <div class="content-section">
+      <div class="content-body">
+
+        <p style="text-align:center;font-size:1.15rem;margin-bottom:2rem;">
+          Your donation supports the printing and distribution of Project Arbroath booklets. Every contribution helps spread understanding of Scotland's sovereignty.
+        </p>
+
+        <div class="donate-wrapper">
+          <h3>Make a Donation</h3>
+
+          <label class="form-label">Select Amount</label>
+          <div class="preset-grid">
+            <button class="preset-btn" onclick="setDonation(5, this)">£5</button>
+            <button class="preset-btn" onclick="setDonation(10, this)">£10</button>
+            <button class="preset-btn" onclick="setDonation(25, this)">£25</button>
+            <button class="preset-btn" onclick="setDonation(50, this)">£50</button>
+          </div>
+          <input type="number" id="donationAmount" class="form-input" placeholder="Or enter a custom amount (£)">
+
+          <label class="form-label">Optional Message</label>
+          <textarea class="form-input" placeholder="Leave a message of support (optional)"></textarea>
+
+          <a href="#" class="btn btn-orange" style="width:100%;text-align:center;font-size:1.1rem;padding:1.1rem;">
+            Proceed to Secure Checkout
+          </a>
+
+          <p class="form-note">🔒 Secure payment via Stripe<br>No booklets will be sent for donations</p>
+        </div>
+
+        <div style="text-align:center;margin:3rem 0;">
+          <p style="font-size:1.1rem;margin-bottom:1.5rem;">Want to receive booklets instead?</p>
+          <a href="/booklet.html" class="btn btn-primary">Purchase Booklets</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div>
+        <h4>Project Arbroath</h4>
+        <p>A civic education project grounded in the principle that sovereignty in Scotland rests with the people.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/sovereignty.html">Sovereignty</a></li>
+          <li class="nav-item"><a href="/booklet/">The Booklet ▾</a><div class="dropdown"><a href="/booklet/">About the Booklet</a><a href="/booklet/order.html">Get the Booklet</a></div></li>
+          <li><a href="/holyrood/">Holyrood Elections</a></li>
+          <li><a href="/donate.html">Donate</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="mailto:projectarbroath@gmail.com">projectarbroath@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Project Arbroath. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+    function setDonation(amount, btn) {
+      document.getElementById('donationAmount').value = amount;
+      document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+  </script>
+</body>
+</html>

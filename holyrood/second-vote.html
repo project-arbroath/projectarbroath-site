@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Second Vote | Project Arbroath</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="/" class="logo">PROJECT ARBROATH</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/sovereignty.html">Sovereignty</a></li>
+        <li class="nav-item"><a href="/booklet/">The Booklet ▾</a><div class="dropdown"><a href="/booklet/">About the Booklet</a><a href="/booklet/order.html">Get the Booklet</a></div></li>
+        <li class="nav-item">
+          <a href="/holyrood/" class="active">Holyrood 2026 ▾</a>
+          <div class="dropdown">
+            <a href="/holyrood/">Overview</a>
+            <a href="/holyrood/second-vote.html">The Second Vote</a>
+            <a href="/holyrood/explainers.html">Explainers</a>
+            <a href="/holyrood/calculator.html">Electoral Calculator</a>
+          </div>
+        </li>
+        <li><a href="/donate.html" class="cta-nav">Donate</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <h1>The Second Vote &amp; D'Hondt System</h1>
+      <p>How the regional list vote actually works</p>
+    </div>
+
+    <nav class="submenu">
+      <a href="/holyrood/">Overview</a>
+      <a href="/holyrood/second-vote.html" class="active">The Second Vote</a>
+      <a href="/holyrood/explainers.html">Video Explainers</a>
+      <a href="/holyrood/calculator.html">Electoral Calculator</a>
+    </nav>
+
+    <div class="content-section">
+      <div class="content-body">
+
+        <h2>What is D'Hondt?</h2>
+        <p>The D'Hondt method is a mathematical formula used to allocate the 56 regional seats in the Scottish Parliament. It's designed to make overall representation more proportional to vote share.</p>
+
+        <h2>How It Works</h2>
+        <p>For each regional seat to be allocated:</p>
+        <ol>
+          <li>Each party's regional votes are divided by (constituency seats won + 1)</li>
+          <li>The party with the highest result wins that regional seat</li>
+          <li>The process repeats until all 7 regional seats are allocated</li>
+        </ol>
+
+        <h2>The Practical Impact</h2>
+        <p>This creates a critical dynamic: <strong>parties with many constituency seats find it very difficult to win regional seats</strong>.</p>
+        <p>For example, if the SNP wins 9 out of 9 constituency seats in a region, their regional votes are divided by 10. This makes it nearly impossible for them to win additional regional MSPs, even with substantial vote share.</p>
+
+        <h2>Understanding Your Power</h2>
+        <p>The second vote is where supporters of independence can maximise pro-independence representation by voting for parties that won few or no constituency seats.</p>
+        <p>This isn't tactical voting—it's understanding how the system works and using your sovereignty effectively.</p>
+
+        <div style="text-align:center;margin:3rem 0;">
+          <a href="/holyrood/calculator.html" class="btn btn-orange">See It In Action — Use the Calculator</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div>
+        <h4>Project Arbroath</h4>
+        <p>A civic education project grounded in the principle that sovereignty in Scotland rests with the people.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/sovereignty.html">Sovereignty</a></li>
+          <li class="nav-item"><a href="/booklet/">The Booklet ▾</a><div class="dropdown"><a href="/booklet/">About the Booklet</a><a href="/booklet/order.html">Get the Booklet</a></div></li>
+          <li><a href="/holyrood/">Holyrood Elections</a></li>
+          <li><a href="/donate.html">Donate</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="mailto:projectarbroath@gmail.com">projectarbroath@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Project Arbroath. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
