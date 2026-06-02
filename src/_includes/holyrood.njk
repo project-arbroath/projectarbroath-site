@@ -1,0 +1,21 @@
+---
+layout: base.njk
+---
+
+<div class="page-header">
+  <h1>{{ title }}</h1>
+  {% if subtitle %}<p>{{ subtitle }}</p>{% endif %}
+</div>
+
+<nav class="submenu">
+  <a href="/holyrood/" {% if permalink == '/holyrood/' %}class="active"{% endif %}>Overview</a>
+  <a href="/holyrood/second-vote/" {% if permalink == '/holyrood/second-vote/' %}class="active"{% endif %}>The Second Vote</a>
+  <a href="/holyrood/explainers/" {% if permalink == '/holyrood/explainers/' %}class="active"{% endif %}>Video Explainers</a>
+  <a href="/holyrood/calculator/" {% if permalink == '/holyrood/calculator/' %}class="active"{% endif %}>Electoral Calculator</a>
+</nav>
+
+<div class="content-section">
+  <div class="content-body">
+    {{ content | safe }}
+  </div>
+</div>

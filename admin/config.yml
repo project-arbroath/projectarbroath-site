@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: project-arbroath/projectarbroath-site
+  name: git-gateway
   branch: main
 
 media_folder: "assets/images"
@@ -12,15 +11,14 @@ collections:
     files:
       - label: "Home"
         name: "home"
-        file: "content/home.md"
+        file: "src/content/home.md"
         fields:
-          - { label: "Hero Title", name: "hero_title", widget: "string" }
           - { label: "Hero Subtitle", name: "hero_subtitle", widget: "text" }
           - { label: "Election Callout Heading", name: "election_heading", widget: "string" }
           - { label: "Election Callout Text", name: "election_text", widget: "text" }
           - { label: "Sovereignty Section Heading", name: "sovereignty_heading", widget: "string" }
           - { label: "Sovereignty Section Intro", name: "sovereignty_intro", widget: "text" }
-          - { label: "Voting System Section Heading", name: "voting_heading", widget: "string" }
+          - { label: "Voting System Heading", name: "voting_heading", widget: "string" }
           - { label: "Voting System Intro", name: "voting_intro", widget: "text" }
           - { label: "Booklet Section Heading", name: "booklet_heading", widget: "string" }
           - { label: "Booklet Section Text", name: "booklet_text", widget: "text" }
@@ -28,36 +26,18 @@ collections:
 
       - label: "Sovereignty"
         name: "sovereignty"
-        file: "content/sovereignty.md"
+        file: "src/sovereignty.md"
         fields:
           - { label: "Page Title", name: "title", widget: "string" }
           - { label: "Page Subtitle", name: "subtitle", widget: "string" }
           - { label: "Body Content", name: "body", widget: "markdown" }
-
-      - label: "The Booklet"
-        name: "booklet"
-        file: "content/booklet.md"
-        fields:
-          - { label: "Page Title", name: "title", widget: "string" }
-          - { label: "Page Subtitle", name: "subtitle", widget: "string" }
-          - { label: "Intro Text", name: "intro", widget: "text" }
-          - { label: "What's in the Booklet (body)", name: "body", widget: "markdown" }
-          - label: "Purchase Options"
-            name: "purchase_options"
-            widget: "list"
-            fields:
-              - { label: "Label", name: "label", widget: "string" }
-              - { label: "Price", name: "price", widget: "string" }
-              - { label: "Description", name: "description", widget: "string" }
-          - { label: "Bulk Order Email", name: "bulk_email", widget: "string" }
-          - { label: "Donate CTA Text", name: "donate_cta", widget: "string" }
 
   - name: "holyrood"
     label: "Holyrood 2026"
     files:
       - label: "Overview"
         name: "elections"
-        file: "content/holyrood-2026/elections.md"
+        file: "src/holyrood/index.md"
         fields:
           - { label: "Page Title", name: "title", widget: "string" }
           - { label: "Page Subtitle", name: "subtitle", widget: "string" }
@@ -65,7 +45,7 @@ collections:
 
       - label: "The Second Vote"
         name: "second-vote"
-        file: "content/holyrood-2026/second-vote.md"
+        file: "src/holyrood/second-vote.md"
         fields:
           - { label: "Page Title", name: "title", widget: "string" }
           - { label: "Page Subtitle", name: "subtitle", widget: "string" }
@@ -73,12 +53,10 @@ collections:
 
       - label: "Video Explainers"
         name: "explainers"
-        file: "content/holyrood-2026/explainers.md"
+        file: "src/holyrood/explainers.md"
         fields:
           - { label: "Page Title", name: "title", widget: "string" }
           - { label: "Page Subtitle", name: "subtitle", widget: "string" }
-          - { label: "Intro Text", name: "intro", widget: "text" }
-          - { label: "YouTube Embed URL", name: "video_url", widget: "string", required: false, hint: "Paste a YouTube embed URL here e.g. https://www.youtube.com/embed/VIDEOID" }
           - { label: "Body Content", name: "body", widget: "markdown" }
 
   - name: "settings"
@@ -86,11 +64,7 @@ collections:
     files:
       - label: "Global Settings"
         name: "settings"
-        file: "content/settings.md"
+        file: "src/content/settings.md"
         fields:
-          - { label: "Site Name", name: "site_name", widget: "string" }
-          - { label: "Tagline", name: "tagline", widget: "string" }
           - { label: "Contact Email", name: "contact_email", widget: "string" }
-          - { label: "Footer Description", name: "footer_description", widget: "text" }
-          - { label: "Stripe Donation Link", name: "stripe_link", widget: "string", required: false }
-          - { label: "Calculator External URL", name: "calculator_url", widget: "string" }
+          - { label: "Calculator URL", name: "calculator_url", widget: "string" }

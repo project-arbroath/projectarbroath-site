@@ -1,3 +1,4 @@
+---
 hero_title: "Sovereignty Rests with the People"
 hero_subtitle: "Project Arbroath is a civic initiative dedicated to explaining popular sovereignty in Scotland. We have grounded ourselves in the principle that Scotland's future should be decided by Scotland's people—not by Westminster, not by permission, but by right."
 election_heading: "Holyrood Election 2026"
@@ -9,3 +10,4 @@ voting_intro: "The Scottish Parliament elections use a system designed to balanc
 booklet_heading: "The Project Arbroath Booklet"
 booklet_text: "This isn't a wish list or a roadmap for the next election. This is the argument—grounded in claim of right and rooted in Scotland's constitutional continuity—for why sovereignty belongs to you. Available in multiple formats, from single copies to bulk distribution boxes for organised outreach."
 booklet_quote: "Grounded in claim of right and rooted in Scotland's constitutional continuity, this booklet makes the case that sovereignty has never left Scotland's people—and therefore, permission is not required for self-determination."
+---

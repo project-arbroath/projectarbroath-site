@@ -1,6 +1,0 @@
-site_name: "Project Arbroath"
-tagline: "Sovereignty Rests with the People"
-contact_email: "projectarbroath@gmail.com"
-footer_description: "A civic education project grounded in the principle that sovereignty in Scotland rests with the people."
-stripe_link: ""
-calculator_url: "https://claude.site/artifacts/b2c7eb77-c39c-42f0-9627-cd57e48c1066"
