@@ -3,14 +3,14 @@
 :root {
   --bg:        #0f1a0e;
   --fg:        #e8e4d9;
-  --fg-mid:    rgba(232,228,217,0.55);
-  --fg-dim:    rgba(232,228,217,0.38);
-  --fg-faint:  rgba(232,228,217,0.18);
-  --fg-ghost:  rgba(232,228,217,0.08);
+  --fg-mid:    #b8b4aa;
+  --fg-dim:    #908d85;
+  --fg-faint:  #4a4842;
+  --fg-ghost:  #252820;
   --amber:     #c47f2a;
   --amber-dim: rgba(196,127,42,0.5);
   --amber-bg:  rgba(196,127,42,0.6);
-  --rule:      rgba(232,228,217,0.1);
+  --rule:      #252820;
 }
 
 html { scroll-behavior: smooth; }
@@ -172,7 +172,7 @@ body {
   font-size: 11px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(232,228,217,0.28);
+  color: #7a7870;
   margin-bottom: 22px;
 }
 
@@ -188,7 +188,7 @@ body {
 
 .pa-h1 em {
   font-style: italic;
-  color: rgba(232,228,217,0.42);
+  color: #9a9690;
 }
 
 .pa-kicker {
@@ -237,7 +237,7 @@ body {
 
 .pa-lead em {
   font-style: italic;
-  color: rgba(232,228,217,0.38);
+  color: #9a9690;
 }
 
 .pa-rule {
