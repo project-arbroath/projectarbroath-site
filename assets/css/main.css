@@ -31,10 +31,10 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  padding: 16px 24px;
+  padding: 12px 24px;
   background: var(--bg);
   border-bottom: 0.5px solid var(--rule);
 }
@@ -48,8 +48,34 @@ body {
   text-decoration: none;
 }
 
-.pa-logo { display: flex; align-items: center; }
-.pa-logo img { height: 36px; width: auto; }
+.pa-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pa-logo img {
+  height: 48px;
+  width: auto;
+}
+
+.pa-nav-donate {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--bg);
+  background: var(--amber);
+  border-radius: 4px;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-family: 'DM Sans', sans-serif;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+
+.pa-nav-donate:hover { opacity: 0.88; }
 
 .pa-menu-btn {
   display: flex;
