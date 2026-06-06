@@ -4,74 +4,92 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }} | Project Arbroath</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/main.css">
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
 
-  <header class="site-header">
-    <nav class="nav-container">
-      <a href="/" class="logo">PROJECT ARBROATH</a>
-      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="/" {% if navPage == 'home' %}class="active"{% endif %}>Home</a></li>
-        <li><a href="/sovereignty/" {% if navPage == 'sovereignty' %}class="active"{% endif %}>Sovereignty</a></li>
-        <li class="nav-item">
-          <a href="/booklet/" {% if navPage == 'booklet' %}class="active"{% endif %}>The Booklet ▾</a>
-          <div class="dropdown">
-            <a href="/booklet/">About the Booklet</a>
-            <a href="/booklet/order/">Get the Booklet</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a href="/holyrood/" {% if navPage == 'holyrood' %}class="active"{% endif %}>Holyrood 2026 ▾</a>
-          <div class="dropdown">
-            <a href="/holyrood/">Overview</a>
-            <a href="/holyrood/second-vote/">The Second Vote</a>
-            <a href="/holyrood/explainers/">Explainers</a>
-            <a href="/holyrood/calculator/">Electoral Calculator</a>
-          </div>
-        </li>
-        <li><a href="/donate/" class="cta-nav">Donate</a></li>
-      </ul>
+  <div class="pa-overlay" id="menu" role="dialog" aria-modal="true" aria-label="Site navigation">
+    <div class="pa-overlay-top">
+      <span class="pa-wordmark">Project Arbroath</span>
+      <button class="pa-overlay-close" onclick="closeMenu()" aria-label="Close menu">Close</button>
+    </div>
+    <nav>
+      <a class="pa-overlay-link" href="/">Home</a>
+      <a class="pa-overlay-link" href="/questions/">The questions</a>
+      <a class="pa-overlay-link" href="/sovereignty/">Sovereignty explained</a>
+      <a class="pa-overlay-link" href="/booklet/">The booklet</a>
+      <a class="pa-overlay-link" href="/about/">About this project</a>
+      <a class="pa-overlay-link" href="/donate/">Donate</a>
     </nav>
-  </header>
+    <a class="pa-overlay-donate" href="/donate/">Donate</a>
+    <a class="pa-overlay-etu" href="https://endtheunion.scot" target="_blank" rel="noopener">
+      endtheunion.scot
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+    </a>
+  </div>
+
+  <nav class="pa-nav" aria-label="Main navigation">
+    <a href="/" class="pa-wordmark">Project Arbroath</a>
+    <button class="pa-menu-btn" onclick="openMenu()" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      Menu
+    </button>
+  </nav>
 
   <main>
     {{ content | safe }}
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-container">
-      <div>
-        <h4>Project Arbroath</h4>
-        <p>A civic education project grounded in the principle that sovereignty in Scotland rests with the people.</p>
-      </div>
-      <div>
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/sovereignty/">Sovereignty</a></li>
-          <li><a href="/booklet/">About the Booklet</a></li>
-          <li><a href="/booklet/order/">Get the Booklet</a></li>
-          <li><a href="/holyrood/">Holyrood Elections</a></li>
-          <li><a href="/donate/">Donate</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <p><a href="mailto:projectarbroath@gmail.com">projectarbroath@gmail.com</a></p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Project Arbroath. All rights reserved.</p>
-    </div>
+  <footer class="pa-footer">
+    <div class="pa-footer-name">Project Arbroath</div>
+    <a class="pa-footer-row" href="/questions/">
+      <span>The questions</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+    <a class="pa-footer-row" href="/sovereignty/">
+      <span>Sovereignty explained</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+    <a class="pa-footer-row" href="/booklet/">
+      <span>The booklet</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+    <a class="pa-footer-row" href="/donate/">
+      <span>Donate</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+    <a class="pa-footer-row pa-footer-etu" href="https://endtheunion.scot" target="_blank" rel="noopener">
+      <span>endtheunion.scot</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+    </a>
+    <p class="pa-footer-copy">projectarbroath@gmail.com &middot; &copy; 2026 Project Arbroath</p>
   </footer>
 
   <script>
-    document.querySelector('.nav-toggle').addEventListener('click', function() {
-      document.querySelector('#navLinks').classList.toggle('open');
+    function openMenu() {
+      const menu = document.getElementById('menu');
+      const btn = document.querySelector('.pa-menu-btn');
+      menu.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      btn.setAttribute('aria-expanded', 'true');
+    }
+
+    function closeMenu() {
+      const menu = document.getElementById('menu');
+      const btn = document.querySelector('.pa-menu-btn');
+      menu.classList.remove('open');
+      document.body.style.overflow = '';
+      btn.setAttribute('aria-expanded', 'false');
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeMenu();
     });
+
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
         if (!user) {
