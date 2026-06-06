@@ -68,7 +68,7 @@ body {
   color: var(--bg);
   background: var(--amber);
   border-radius: 4px;
-  padding: 8px 16px;
+  padding: 5px 11px;
   text-decoration: none;
   font-family: 'DM Sans', sans-serif;
   transition: opacity 0.2s;
