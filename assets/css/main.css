@@ -48,6 +48,9 @@ body {
   text-decoration: none;
 }
 
+.pa-logo { display: flex; align-items: center; }
+.pa-logo img { height: 36px; width: auto; }
+
 .pa-menu-btn {
   display: flex;
   align-items: center;
