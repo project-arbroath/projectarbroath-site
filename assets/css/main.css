@@ -618,6 +618,15 @@ body {
   margin-bottom: 14px;
 }
 
+.pa-sidebar-quote {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.38;
+  color: var(--fg);
+  margin-bottom: 14px;
+}
+
 .pa-sidebar-body {
   font-family: 'Playfair Display', serif;
   font-style: italic;
@@ -635,6 +644,94 @@ body {
   border-radius: 0;
   padding: 20px 0;
 }
+
+.pa-sidebar-cta-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--amber);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  transition: opacity 0.2s;
+}
+
+.pa-sidebar-cta-link:hover { opacity: 0.75; }
+
+/* ── SIDEBAR BOOKLET CARD (Oxblood) ── */
+.pa-sidebar-booklet-card {
+  margin-top: 24px;
+  background: #6B1C1C;
+  padding: 22px;
+  border-radius: 2px;
+}
+
+.pa-sidebar-booklet-kicker {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(232,228,217,0.45);
+  margin-bottom: 12px;
+}
+
+.pa-sidebar-booklet-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: rgba(232,228,217,0.92);
+  margin-bottom: 10px;
+}
+
+.pa-sidebar-booklet-body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: rgba(232,228,217,0.55);
+  margin-bottom: 16px;
+}
+
+.pa-sidebar-booklet-price {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--amber);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.pa-sidebar-booklet-cta {
+  display: block;
+  text-align: center;
+  padding: 9px 14px;
+  background: rgba(232,228,217,0.88);
+  color: #6B1C1C;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  border-radius: 2px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: opacity 0.2s;
+}
+
+.pa-sidebar-booklet-cta:hover { opacity: 0.9; }
+
+.pa-sidebar-booklet-link {
+  display: block;
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  color: rgba(232,228,217,0.38);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.pa-sidebar-booklet-link:hover { color: rgba(232,228,217,0.7); }
 
 /* ── BRIEFINGS LEDGER ── */
 .pa-briefings { display: flex; flex-direction: column; }
