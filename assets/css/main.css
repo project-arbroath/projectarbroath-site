@@ -511,6 +511,10 @@ body {
   margin: 0;
 }
 
+.pa-hero-spinner {
+  display: none;
+}
+
 .pa-hero-title {
   font-family: 'Playfair Display', serif;
   font-size: 2.0rem;
@@ -879,6 +883,11 @@ body {
   .pa-hero-image {
     display: block;
     aspect-ratio: 4 / 5;
+  }
+
+  .pa-hero-spinner {
+    display: block;
+    align-self: start;
   }
 
   .pa-hero-title { font-size: 2.75rem; }
