@@ -107,6 +107,19 @@ body {
   fill: none;
 }
 
+.pa-nav-left,
+.pa-nav-right { display: none; }
+
+.pa-nav-link {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  color: rgba(232,228,217,0.78);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.pa-nav-link:hover { color: var(--fg); }
+
 /* ── OVERLAY MENU ── */
 .pa-overlay {
   display: none;
@@ -522,10 +535,52 @@ body {
   letter-spacing: 0.04em;
 }
 
-/* ── DESKTOP ── */
+/* ── BREAKPOINTS ── */
 @media (min-width: 480px) {
   body {
     border-left: 0.5px solid var(--fg-ghost);
     border-right: 0.5px solid var(--fg-ghost);
   }
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: none;
+    border-left: none;
+    border-right: none;
+  }
+
+  .pa-nav {
+    padding: 0 48px;
+  }
+
+  .pa-menu-btn,
+  .pa-nav > .pa-nav-donate { display: none; }
+
+  .pa-nav-left,
+  .pa-nav-right {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+
+  .pa-nav-right {
+    justify-self: end;
+    gap: 24px;
+  }
+
+  .pa-nav-link { font-size: 12px; }
+
+  .pa-logo img { height: 42px; }
+
+  .pa-nav-right .pa-nav-donate {
+    justify-self: auto;
+    border-radius: 2px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pa-nav { padding: 0 64px; }
+  .pa-nav-link { font-size: 13px; }
+  .pa-logo img { height: 52px; }
 }
