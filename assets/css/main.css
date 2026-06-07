@@ -235,19 +235,19 @@ body {
 }
 
 .pa-kicker {
-  font-size: 11px;
-  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--amber);
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
 .pa-body {
-  font-size: 17px;
-  line-height: 1.85;
-  color: var(--fg-mid);
-  font-weight: 300;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: rgba(232,228,217,0.9);
+  font-weight: 400;
   margin-bottom: 16px;
 }
 
@@ -524,7 +524,7 @@ body {
 
 .pa-hero-title {
   font-family: 'Playfair Display', serif;
-  font-size: 1.75rem;
+  font-size: 2.0rem;
   line-height: 1.15;
   font-weight: 500;
   color: var(--fg);
@@ -578,7 +578,7 @@ body {
 
 .pa-card-title {
   font-family: 'Playfair Display', serif;
-  font-size: 1.75rem;
+  font-size: 1.35rem;
   line-height: 1.22;
   font-weight: 500;
   color: var(--fg);
@@ -632,17 +632,19 @@ body {
 .pa-sidebar-body {
   font-family: 'Playfair Display', serif;
   font-style: italic;
-  font-size: 15px;
+  font-size: 0.95rem;
   line-height: 1.65;
   color: var(--fg-mid);
   margin-bottom: 14px;
 }
 
 .pa-sidebar-cta {
-  background: rgba(196,127,42,0.07);
-  border: 0.5px solid rgba(196,127,42,0.22);
-  border-radius: 4px;
-  padding: 20px;
+  background: rgba(232,228,217,0.03);
+  border: none;
+  border-top: 1px solid var(--amber);
+  border-bottom: 1px solid var(--amber);
+  border-radius: 0;
+  padding: 20px 0;
 }
 
 /* ── BRIEFINGS LEDGER ── */
@@ -793,8 +795,9 @@ body {
     aspect-ratio: 4 / 5;
   }
 
-  .pa-hero-title { font-size: 2.4rem; }
+  .pa-hero-title { font-size: 2.75rem; }
   .pa-hero-deck  { font-size: 1.2rem; }
+  .pa-body       { font-size: 1.0rem; }
 
   /* Editorial grid */
   .pa-editorial-grid {
@@ -817,7 +820,7 @@ body {
   .pa-inquiry-card:last-child { padding-bottom: 0; }
 
   .pa-card-offset { margin-top: 3rem; }
-  .pa-card-title  { font-size: 2.25rem; }
+  .pa-card-title  { font-size: 1.65rem; }
 
   /* Editorial grid padding */
   .pa-editorial-grid { padding: 5rem 48px; }
@@ -828,7 +831,7 @@ body {
     padding-left: 40px;
   }
 
-  .pa-sidebar-body { font-size: 17px; }
+  .pa-sidebar-body { font-size: 1.05rem; }
 
   /* Global section padding */
   .pa-section,
