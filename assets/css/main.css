@@ -545,7 +545,7 @@ body {
 
 @media (min-width: 768px) {
   body {
-    max-width: none;
+    max-width: 1280px;
     border-left: none;
     border-right: none;
   }
@@ -582,5 +582,5 @@ body {
 @media (min-width: 1024px) {
   .pa-nav { padding: 0 64px; }
   .pa-nav-link { font-size: 13px; }
-  .pa-logo img { height: 52px; }
+  .pa-logo img { height: 200px; }
 }
