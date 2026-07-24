@@ -4,53 +4,29 @@ title: Support Project Arbroath
 navPage: donate
 permalink: /donate/
 ---
-
 <div class="page-header">
   <h1>Support Project Arbroath</h1>
   <p>Help us print and distribute booklets across Scotland</p>
 </div>
-
 <div class="content-section">
   <div class="content-body">
-
     <p style="text-align:center;font-size:1.15rem;margin-bottom:2rem;">
       Your donation supports the printing and distribution of Project Arbroath booklets. Every contribution helps spread understanding of Scotland's sovereignty.
     </p>
-
     <div class="donate-wrapper">
       <h3>Make a Donation</h3>
-
       <label class="form-label">Select Amount</label>
       <div class="preset-grid">
-        <button class="preset-btn" onclick="setDonation(5, this)">£5</button>
-        <button class="preset-btn" onclick="setDonation(10, this)">£10</button>
-        <button class="preset-btn" onclick="setDonation(25, this)">£25</button>
-        <button class="preset-btn" onclick="setDonation(50, this)">£50</button>
+        <a href="https://buy.stripe.com/aFaeV6e1W25BbxUgSZ2Ry0k" class="btn btn-secondary" style="flex: 1; text-align: center;">£1</a>
+        <a href="https://buy.stripe.com/eVq3cof60fWr9pMdGN2Ry0l" class="btn btn-secondary" style="flex: 1; text-align: center;">£5</a>
+        <a href="https://buy.stripe.com/3cI00c7Dy7pV31o1Y52Ry0m" class="btn btn-secondary" style="flex: 1; text-align: center;">£10</a>
+        <a href="https://buy.stripe.com/fZudR29LG4dJeK6byF2Ry0n" class="btn btn-secondary" style="flex: 1; text-align: center;">£25</a>
       </div>
-      <input type="number" id="donationAmount" class="form-input" placeholder="Or enter a custom amount (£)">
-
-      <label class="form-label">Optional Message</label>
-      <textarea class="form-input" placeholder="Leave a message of support (optional)"></textarea>
-
-      <a href="#" class="btn btn-orange" style="width:100%;text-align:center;font-size:1.1rem;padding:1.1rem;">
-        Proceed to Secure Checkout
-      </a>
-
-      <p class="form-note">🔒 Secure payment via Stripe<br>No booklets will be sent for donations</p>
+      <p class="form-note" style="text-align:center;margin-top:1.5rem;">🔒 Secure payment via Stripe<br>No booklets will be sent for donations</p>
     </div>
-
     <div style="text-align:center;margin:3rem 0;">
       <p style="font-size:1.1rem;margin-bottom:1.5rem;">Want to receive booklets instead?</p>
       <a href="/booklet/order/" class="btn btn-primary">Purchase Booklets</a>
     </div>
-
   </div>
 </div>
-
-<script>
-  function setDonation(amount, btn) {
-    document.getElementById('donationAmount').value = amount;
-    document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-  }
-</script>
